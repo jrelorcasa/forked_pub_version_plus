@@ -43,12 +43,15 @@ class PubspecHandler {
     return pubspec.version ?? Version.parse('0.0.0');
   }
 
-  Version? _oldVerison;
-  Version? get oldVersion => _oldVerison;
+  Version? _oldVersion;
+  Version? get oldVersion => _oldVersion;
 
-  String get _nextMajorVersion => '${version.nextMajor}';
-  String get _nextMinorVersion => '${version.nextMinor}';
-  String get _nextPatchVersion => '${version.nextPatch}';
+  String get _nextMajorVersion =>
+      '${version.nextMajor}${version.nextBuildString}';
+  String get _nextMinorVersion =>
+      '${version.nextMinor}${version.nextBuildString}';
+  String get _nextPatchVersion =>
+      '${version.nextPatch}${version.nextBuildString}';
   String get _nextBuildVersion =>
       '${version.current}${version.nextBuildString}';
 
@@ -90,7 +93,7 @@ class PubspecHandler {
       await _file.writeAsString(output, mode: FileMode.write);
 
       // Update old version for reference
-      _oldVerison = version;
+      _oldVersion = version;
 
       // update content to reflect new version
       _content = Pubspec.parse(output);
@@ -108,7 +111,7 @@ class PubspecHandler {
   Future<void> reset({bool hasBuild = false}) async {
     final version = hasBuild ? '0.0.0+0' : '0.0.0';
     await _updateVersion(version);
-    _oldVerison = null;
+    _oldVersion = null;
   }
 
   @visibleForTesting
