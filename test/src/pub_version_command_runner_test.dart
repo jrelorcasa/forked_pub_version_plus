@@ -1,4 +1,4 @@
-import 'package:pub_version_plus/src/command_runner.dart';
+import 'package:forked_pub_version_plus/src/command_runner.dart';
 import 'package:test/test.dart';
 
 void main() {

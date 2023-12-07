@@ -1,6 +1,6 @@
-[![Pub Package](https://img.shields.io/pub/v/pub_version_plus.svg)](https://pub.dartlang.org/packages/pub_version_plus)
+<!-- [![Pub Package](https://img.shields.io/pub/v/pub_version_plus.svg)](https://pub.dartlang.org/packages/pub_version_plus)
 [![Dart Version](https://img.shields.io/badge/dart-%5E2.13.0-green.svg?branch=master)](https://img.shields.io/badge/dart-%5E2.13.0-green.svg)
-[![GitHub issues](https://img.shields.io/github/issues-raw/mrgnhnt96/pub_version_plus.svg)](https://github.com/mrgnhnt96/pub_version_plus/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/mrgnhnt96/pub_version_plus.svg)](https://github.com/mrgnhnt96/pub_version_plus/issues) -->
 
 A command-line tool for easily incrementing pubspec.yaml version numbers.
 
@@ -42,45 +42,45 @@ version: 0.0.0+000
 More details about the version number can be found here: [android](https://developer.android.com/studio/publish/versioning#appversioning) | [apple](https://developer.apple.com/library/archive/technotes/tn2420/_index.html)
 ## Installation
 
-`pub_version_plus` can be used globally or as a dev dependency to your `pubspec.yaml` file.
+`forked_pub_version_plus` can be used globally or as a dev dependency to your `pubspec.yaml` file.
 
 ### Use globally
 
 ```bash
-$ pub global activate pub_version_plus
+$ pub global activate forked_pub_version_plus
 #! or
-$ flutter pub global activate pub_version_plus
+$ flutter pub global activate forked_pub_version_plus
 ```
 
 ### Use as a Library
 
 ```bash
 #! dart
-$ dart pub add --dev pub_version_plus
+$ dart pub add --dev forked_pub_version_plus
 
 #! flutter
-$ flutter pub add --dev pub_version_plus
+$ flutter pub add --dev forked_pub_version_plus
 ```
 
 Or add it to your `pubspec.yaml` file:
 
 ```yaml
 dev_dependencies:
-  pub_version_plus:
+  forked_pub_version_plus:
 ```
 
 <br>
 
 ## Usage
 
-`pub_version_plus` supports four commands:
+`forked_pub_version_plus` supports four commands:
 
 - `major`
 - `minor`
 - `patch`
 - `build`
 
-Depending on how you `pub_version_plus` installed, you have a couple of different ways to use it:
+Depending on how you `forked_pub_version_plus` installed, you have a couple of different ways to use it:
 
 ```bash
 #! installed globally
@@ -88,13 +88,13 @@ $ pubversion <version-type>
 
 #! installed as a dev dependency
 #! Flutter
-$ flutter pub run pub_version_plus:main <version-type>
+$ flutter pub run forked_pub_version_plus:main <version-type>
 
 #! Dart
-$ dart pub run pub_version_plus:main <version-type>
+$ dart pub run forked_pub_version_plus:main <version-type>
 ```
 
-Installing `pub_version_plus` as a dev dependency will make it available to any CI/CD tool. (GitHub Actions, CodeMagic, etc.)
+Installing `forked_pub_version_plus` as a dev dependency will make it available to any CI/CD tool. (GitHub Actions, CodeMagic, etc.)
 
 <br>
 

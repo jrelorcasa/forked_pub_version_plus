@@ -1,5 +1,5 @@
-import 'package:pub_version_plus/src/command/version_commmand.dart';
-import 'package:pub_version_plus/src/util/enum.dart';
+import 'package:forked_pub_version_plus/src/command/version_commmand.dart';
+import 'package:forked_pub_version_plus/src/util/enum.dart';
 import 'package:test/test.dart';
 
 typedef Initializer<T extends VersionCommand> = T Function();

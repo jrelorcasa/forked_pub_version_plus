@@ -1,6 +1,6 @@
-import 'package:pub_version_plus/src/util/enum.dart';
-import 'package:pub_version_plus/src/util/exceptions.dart';
-import 'package:pub_version_plus/src/util/pubspec_handler.dart';
+import 'package:forked_pub_version_plus/src/util/enum.dart';
+import 'package:forked_pub_version_plus/src/util/exceptions.dart';
+import 'package:forked_pub_version_plus/src/util/pubspec_handler.dart';
 import 'package:test/test.dart';
 
 import '../../util/pubspec.dart';
