@@ -1,3 +1,8 @@
+# 1.1.1
+
+- Forked from pub_version_plus
+  - Retained build version on major, minor or patch bump
+
 # 1.1.0
 
 - Upgraded dependencies to latest versions
